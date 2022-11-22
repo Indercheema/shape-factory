@@ -83,6 +83,24 @@
   transition: background-color 0.1s ease-in-out;
 }
 
+select + select {
+  margin-left: 20px;
+}
+
+button {
+  margin-left: 20px;
+}
+
+select {
+  width: 200px;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid --app-green;
+}
+
 
 
 
