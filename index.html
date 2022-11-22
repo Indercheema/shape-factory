@@ -16,7 +16,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="assets/style/index.css" media="all">
-    <script src="assets/script/index.js" defer></script>
+    <script src="assets/script/index.js" type="module"></script>
 </head>
 
 <body>
@@ -26,10 +26,12 @@
             <div>
                 <form>
                     <select name="shape" class="shape"">
+                      <option value="shape" disabled selected="true">Select Shape</option>
                       <option value="circle">Circle</option>
                       <option value="square">Square</option>
                     </select>
                     <select name="color" class="color">
+                        <option value="color" disabled selected="true">Select Color</option>
                         <option value="blue">Blue</option>
                         <option value="green">Green</option>
                         <option value="orange">Orange</option>
@@ -41,7 +43,7 @@
             </div>
             <div class="center">
                 <div class="big-box">
- 
+                   
                 </div>
             </div>
         </div>
