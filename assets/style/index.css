@@ -1,0 +1,88 @@
+@import "./reset.css";
+
+
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+   }
+
+   
+.container {
+  width: min(100% - 30px, 1380px);
+  margin-inline: auto;
+}
+
+   body {
+    background-color: #000;
+    height: calc(100vh - 20px);
+   }
+
+   h2 , form{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+   }
+
+
+
+.center {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+
+}
+
+.big-box {
+  background-color: #1a1d28;
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: 100px;
+  gap: 10px;
+  height: 600px;
+  padding: 10px;
+  width: 600px;
+}
+
+
+/* .box1, .box2, .box3 , .box4 , .box5 , .box6 , .box7 , .box8 , .box9 , .box10  {
+  height: 100px;
+  background-color: var(--app-orange);
+}
+
+.box1 {
+  background-color: var(--app-blue);
+}
+.box2 {
+  background-color: var(--app-green);
+} */
+
+.btn {
+  margin-top: 30px;
+  font-size: 15px;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  line-height: 40px;
+  width: 140px;
+  border-radius: 50px;
+  border: 1px solid --app-green;
+  background-color: var(--app-green);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0035e9;
+  transition: background-color 0.1s ease-in-out;
+}
+
+
+
+
