@@ -23,7 +23,7 @@
     height: calc(100vh - 20px);
    }
 
-   h2 , form{
+   h2 , form ,p{
     color: #fff;
     text-align: center;
     margin-top: 20px;
