@@ -42,7 +42,8 @@
 .big-box {
   background-color: #1a1d28;
   display: grid;
-  grid-template-columns: repeat(5, 100px);
+  grid-template-columns: repeat( auto-fill, minmax(100px , 1fr));
+  transform: rotateX(180deg);
   grid-template-rows: 100px;
   gap: 10px;
   height: 600px;
@@ -51,16 +52,18 @@
 }
 
 
-.box1, .box2, .box3 , .box4 , .box5 , .box6 , .box7 , .box8 , .box9 , .box10  {
+.square {
   height: 100px;
-  background-color: var(--app-orange);
+  width: 100px;
+  cursor: pointer;
+  /* background-color: #0035e9; */
 }
 
-.box1 {
-  background-color: var(--app-blue);
-}
-.box2 {
-  background-color: var(--app-green);
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .btn {

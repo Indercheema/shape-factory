@@ -7,37 +7,30 @@
 */
 
 class Shape{
-    constructor(shape, color) {
-        this._shape = shape;
+    constructor(name, color) {
+        this._name = name;
         this._color = color;
     }
 
-    get color(){
+    getColor(){
         return this._color;
     }
 
-    set color(val){
+    setColor(val){
         this._color = val;
     }
 
-    get shape(){
-        return this._shape;
+    getName(){
+        return this._name;
     }
 
-    set shape(val){
-        this._shape = val;
+    setName(val){
+        this._name = val;
     }
-    info(){
-        return `${this._color + this._color} ${this._shape + this._shape}`;
+
+    getInfo(){
+        return `${this._color} ${this._name}`;
     }
 }
-
-const myColors = {
-    blue: "#0f9",
-    green: "#9f0",
-    orange: "#f90",
-    pink: "#f09",
-    purple: "#90f"
-};
 
 export {Shape};
