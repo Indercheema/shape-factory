@@ -49,8 +49,7 @@ onEvent('click', btn , function(event) {
 
 
        onEvent('click', newDiv , (e) => {
-           getInfo.innerText = 'Unit : ' +  (shapes.indexOf(newArray) + 1) + ' ' + shapes[e.target.getAttribute('shapeType')-1].getInfo()
-
+        getInfo.innerText = `Unit : ${(shapes.indexOf(newArray) + 1)} ${shapes[e.target.getAttribute('shapeType')-1].getInfo()}`;
     });
 
     bigBox.appendChild(newDiv);
