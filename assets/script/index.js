@@ -50,7 +50,6 @@ onEvent('click', btn, function (event) {
         newDiv.style.backgroundColor = myColors[colorBox.value];
         newDiv.setAttribute('shapeType', count);
 
-        console.log(newArray);
 
         onEvent('click', newDiv, (e) => {
             showInfo.innerText = `Unit : ${(shapes.indexOf(newArray) + 1)} ${shapes[e.target.getAttribute('shapeType') - 1].getInfo()}`;
